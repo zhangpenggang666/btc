@@ -35,7 +35,7 @@
     async function fetchBitcoinPrice() {
       try {
         // 使用 CoinGecko 的免费 API（无需密钥）
-        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=cny');
+        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
         const data = await response.json();
         const price = data.bitcoin.cny;
 
